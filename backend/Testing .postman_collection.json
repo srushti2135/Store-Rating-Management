@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "27b7a7c9-d86b-422e-8fb6-341980393ee6",
+		"name": "Testing ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5240892",
+		"_collection_link": "https://development-4533.postman.co/workspace/Development-Workspace~327b7095-ede2-4f04-b628-76bf5e3eaafa/collection/5240892-27b7a7c9-d86b-422e-8fb6-341980393ee6?action=share&source=collection_link&creator=5240892"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Johnathan Doe Example User\",\r\n  \"email\": \"john@example.com\",\r\n  \"address\": \"123 Main Street, New Delhi, India\",\r\n  \"password\": \"StrongPass@1\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

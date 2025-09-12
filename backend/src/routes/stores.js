@@ -1,0 +1,10 @@
+import express from 'express';
+import { createStore, listStores, getStore, updateStore, deleteStore } from '../controllers/stores.js';
+import { authenticateToken, authorizeRoles } from '../middleware/auth.js';
+const router = express.Router();
+router.post('/', authenticateToken, authorizeRoles('admin'), createStore);
+router.get('/', authenticateToken, listStores);
+router.get('/:id', authenticateToken, getStore);
+router.put('/:id', authenticateToken, authorizeRoles('admin','store_owner'), updateStore);
+router.delete('/:id', authenticateToken, authorizeRoles('admin'), deleteStore);
+export default router;
