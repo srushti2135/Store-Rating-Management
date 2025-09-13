@@ -1,5 +1,5 @@
-FullStack Project scaffold
--------------------------
+FullStack Project 
+------------------
 
 Backend:
 - Express + Sequelize (MySQL)
