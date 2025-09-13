@@ -20,7 +20,6 @@ Database:
 How to run:
 1. Backend:
    - cd backend
-   - copy .env.example to .env and set DB credentials & JWT_SECRET
    - npm install
    - npm run dev
 
